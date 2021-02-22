@@ -1,0 +1,134 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        header, aside, section, footer{text-align: center; }
+        body {background-color: #FCFCFC;}
+        @media screen and (max-width: 1250px) { #right_aside { display:none; } } 
+    </style>
+    
+    <title>Coudike Feedback</title>
+</head>
+<body>
+    <div class="container flex_column">
+        <div class="header">
+            <nav>
+                <div class="header_left">
+                    <a href="https://www.cloudike.co.kr/main"><img src="../image/cloudieditor.png" height="43px"></a></div>
+    
+                <div class="header_right_box">   
+                    <button class="header_alarm" id="header_alarm"><img src="../image/alarm.png" width="20" ></button>
+
+                    <button class="header_user_icon"><img src="../image/icon_temp.png" width="40" ></button>
+                </div>
+            </nav>
+        </div>
+    
+        <div class="main_container">
+            <aside class="left_aside" id="left_aside">
+                <nav class="nav" role="navigation">
+                    <ul class="nav__list">
+                      <li>
+                        <input id="group-1" type="checkbox" hidden />
+                        <label for="group-1"><span class="fa fa-angle-right"></span>Team/Group</label>
+                        <ul class="group-list">
+                          <li><a href="#">Team1</a></li>
+                          <li><a href="#">Team2</a></li>
+                          <li><a href="#">Team3</a></li>
+                          <li><a href="#">Team4</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <input id="group-2" type="checkbox" hidden />
+                        <label for="group-2"><span class="fa fa-angle-right"></span>Project</label>
+                        <ul class="group-list">
+                            <li><a href="#">Project1</a></li>
+                            <li><a href="#">Project2</a></li>
+                            <li><a href="#">Project3</a></li>
+                            <li><a href="#">Project4</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </nav>
+                
+            </aside> 
+            <section class="content flex_column"> 
+                <div class="file_setting"></div>
+   
+				<div class="myproject"> <!-- project_info -->
+				<div class="myproject"><h1 id="myproject">My Project</h1></div>
+				</div>
+				<div class="project_view"> <!-- editing_canvas -->
+					<div class="option_btn_div"> <!-- progress_critical -->
+						<div class="option_btn_div2"> <!-- progress -->
+                            <button class="option_btn share_btn" id="share_btn"><img src="../image/share_dark.png" alt="share" style="display: block; margin: 0 auto; margin-bottom: 8px;" width="40%"></button>
+						</div>
+					</div>
+					<div class="option_btn_div"> <!-- progress_critical -->
+						<div class="option_btn_div2">
+							<button class="option_btn delete_btn" id="delete_btn"><img src="../image/delete.png" alt="delete" style="display: block; margin: 0 auto; margin-bottom: 8px;" width="40%"></button><!-- progress -->
+							<span class="custom-arrow"></span>
+						</div>
+		    		</div>
+
+				</div>
+				<div class="file_list" id="file_list">
+					
+					<button type='button' class="file_list new_file_btn" id="new_file_btn"></button>
+<!--					<img src="../image/add_2.png" alt="newFile" style="display: block; margin: 0 auto; margin-bottom: 8px;" width="10%">-->
+					<div class="black_bg"></div>
+					<div class="modal_wrap">
+						<div class="modal_close"><a href="#">close</a></div>
+						<div>
+							<table id="mytable">
+								 <form action="UploadService">
+									  <tr>
+										<td class="newproject_setting" id="modal_title">새 프로젝트 생성</td>
+									  </tr>
+									  <tr>
+										<td class="newproject_setting_what">제목 </td>
+										<td><input type="text" class="newproject_setting_value" id="folder_name" placeholder="폴더 명을 입력하세요."/></td>
+									  </tr>
+									  <tr>
+										<td class="newproject_setting_what">파일 </td>
+										<td><input type="file" value="파일 선택" id="new_project_filechoose_btn" name="file"/></td>
+									  </tr>
+									  <tr>
+<!--										  <input type="button" id="OK_btn" value="">-->
+										  <button id="OK_btn" ></button>
+<!--									  <td colspan="2"><input type="submit" value="" id="new_project_upload_btn"/></td>-->
+									  </tr>
+								</form>
+						   </table>
+						</div>
+						
+					</div>
+					<div>
+						<table class="newfolder_list" id="newfolder_list">
+							  <tr>
+								<td class="newproject" id="folder_name">새 프로젝트 명</td>
+							  </tr>
+							  <tr>
+								<td class="newproject" id="folder_maker">만든 이 </td>
+							  </tr>
+							  <tr>
+								<td class="newproject" id="folder_imagename">이미지 이름 </td>
+							  </tr>
+					   </table>
+					</div>
+<!--
+						<div class="right_aside_content2" id="editing_content">
+						</div>
+-->
+				</div>
+            </section> 
+            <aside class="right_aside flex_column" id="right_aside">
+                <div class="right_aside_content"></div>
+            </aside>
+        </div>
+    </div>
+	    <script type="text/javascript" src="../js/main.js"></script>
+</body>
+</html>
