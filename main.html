@@ -61,67 +61,70 @@
 				<div class="myproject"><h1 id="myproject">My Project</h1></div>
 				</div>
 				<div class="project_view"> <!-- editing_canvas -->
-					<div class="option_btn_div"> <!-- progress_critical -->
-						<div class="option_btn_div2"> <!-- progress -->
+<!--
+					<div class="option_btn_div">
+						<div class="option_btn_div2">
                             <button class="option_btn share_btn" id="share_btn"><img src="../image/share_dark.png" alt="share" style="display: block; margin: 0 auto; margin-bottom: 8px;" width="40%"></button>
 						</div>
 					</div>
-					<div class="option_btn_div"> <!-- progress_critical -->
+-->
+<!--
+					<div class="option_btn_div"> 
 						<div class="option_btn_div2">
-							<button class="option_btn delete_btn" id="delete_btn"><img src="../image/delete.png" alt="delete" style="display: block; margin: 0 auto; margin-bottom: 8px;" width="40%"></button><!-- progress -->
+							<button class="option_btn delete_btn" id="delete_btn"><img src="../image/delete.png" alt="delete" style="display: block; margin: 0 auto; margin-bottom: 8px;" width="40%"></button>
 							<span class="custom-arrow"></span>
 						</div>
 		    		</div>
+-->
 
 				</div>
 				<div class="file_list" id="file_list">
 					
-					<button type='button' class="file_list new_file_btn" id="new_file_btn"></button>
-<!--					<img src="../image/add_2.png" alt="newFile" style="display: block; margin: 0 auto; margin-bottom: 8px;" width="10%">-->
-					<div class="black_bg"></div>
-					<div class="modal_wrap">
-						<div class="modal_close"><a href="#">close</a></div>
-						<div>
-							<table id="mytable">
-								 <form action="UploadService">
-									  <tr>
-										<td class="newproject_setting" id="modal_title">새 프로젝트 생성</td>
-									  </tr>
-									  <tr>
-										<td class="newproject_setting_what">제목 </td>
-										<td><input type="text" class="newproject_setting_value" id="folder_name" placeholder="폴더 명을 입력하세요."/></td>
-									  </tr>
-									  <tr>
-										<td class="newproject_setting_what">파일 </td>
-										<td><input type="file" value="파일 선택" id="new_project_filechoose_btn" name="file"/></td>
-									  </tr>
-									  <tr>
-<!--										  <input type="button" id="OK_btn" value="">-->
-										  <button id="OK_btn" ></button>
-<!--									  <td colspan="2"><input type="submit" value="" id="new_project_upload_btn"/></td>-->
-									  </tr>
-								</form>
-						   </table>
+						<div class="add_new_file" id="add_new_file">
+		<!--					<img src="../image/add_2.png" alt="newFile" style="display: block; margin: 0 auto; margin-bottom: 8px;" width="10%">-->
+							<div class="black_bg"></div>
+							<div class="modal_wrap">
+								<div class="modal_close"><a href="#">close</a></div>
+								<div>
+									<table id="mytable">
+										 <form action="UploadService">
+											  <tr>
+												<td class="newproject_setting" id="modal_title">새 프로젝트 생성</td>
+											  </tr>
+											  <tr>
+												<td class="newproject_setting_what">제목 </td>
+												<td><input type="text" class="newproject_setting_value" id="folder_name" placeholder="폴더 명을 입력하세요."/></td>
+											  </tr>
+											  <tr>
+												<td class="newproject_setting_what">파일 </td>
+												<td><input type="file" value="파일 선택" id="new_project_filechoose_btn" name="new_project_filechoose_btn"/></td>
+											  </tr>
+											  <tr>
+		<!--										  <input type="button" id="OK_btn" value="">-->
+												  <button id="OK_btn" ></button>
+		<!--									  <td colspan="2"><input type="submit" value="" id="new_project_upload_btn"/></td>-->
+											  </tr>
+										</form>
+								   </table>
+								</div>
+
+							</div>
+							
+							<table id="folder_table">
+											  <tr class="folder_column" id="folder_column">
+												<td>
+													<button type='button' class="file_list new_file_btn" id="new_file_btn"></button>
+													
+
+												  </td>
+											  </tr>
+											 
+								   </table>
 						</div>
-						
-					</div>
-					<div>
-						<table class="newfolder_list" id="newfolder_list">
-							  <tr>
-								<td class="newproject" id="folder_name">새 프로젝트 명</td>
-							  </tr>
-							  <tr>
-								<td class="newproject" id="folder_maker">만든 이 </td>
-							  </tr>
-							  <tr>
-								<td class="newproject" id="folder_imagename">이미지 이름 </td>
-							  </tr>
-					   </table>
-					</div>
-<!--
-						<div class="right_aside_content2" id="editing_content">
-						</div>
--->
+						<!--
+							<div class="right_aside_content2" id="editing_content">
+							</div>
+-->					  
 				</div>
             </section> 
             <aside class="right_aside flex_column" id="right_aside">
